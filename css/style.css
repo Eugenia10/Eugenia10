@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)), url(../images/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+header {
+    background-color: white;
+    min-height: 70px;
+    border-bottom: 2px solid beige;
+}
+
+header a {
+    float:left;
+    color: black;
+    text-decoration: none;
+    font-size: 26px;
+    padding: 20px;
+}
+
+header a.active {
+    background-color: rgb(74, 177, 151);
+}
+
+header a:hover {
+    background-color: rgb(66, 117, 102);
+}
+
+footer {
+    min-height: 70px;
+    background-color:white;
+    border-top: 2px solid beige;
+    padding: 10px;
+    width: 100%;
+}
+
+.transform {
+    height: 350px;
+}
+
+.galerie {
+    margin: 10px 10% ;
+    text-align: center;
+}
+.galerie img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin: 20px;
+    filter: brightness(100%) drop-shadow(7px 5px 1px #74739cd2);
+    border: 6px solid #575175;
+    transition: 1s all; 
+}
+
+.galerie img:hover {
+    transform: scale(1.07) skew(1deg);
+    transition: 1s all;
+    filter:brightness(110%) drop-shadow(7px 5px 1px #74739cd2);
+}
+
+ .galerie a {
+    text-decoration: none;
+}
+
+#tabel-carti {
+    border: 3px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-spacing: 6px;
+
+    background: linear-gradient(rgb(228, 222, 222),rgb(180, 173, 173));
+}
+
+th,td {
+    min-width: 100px;
+}
+
+#tabel-carti td, #tabel-carti th {
+    border: 2px solid lightgray;
+    padding: 5px;
+    border-radius: 10px;
+}
+#tabel-carti th {
+    border:3px solid #575175;
+}
+
+#tabel-carti td:first-child {
+    background-color: darkorchid;
+}
+
+#tabel-carti tr:hover {
+    background-color:lightgreen;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 3px 20px rgb(92, 91, 91);
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 150%;
+}
+
+hr {
+    border-top: 3px solid rgb(66, 117, 102);
+}
+.container {
+min-height: 95vh;
+padding: 5px 15% 20px 15%;
+}
+
+.student {
+    border: 3px solid hotpink;
+    width: 30%;
+    height: 200px;
+    overflow: auto;
+    padding: 8px;
+    padding-top: 20px;
+    background: linear-gradient(white,lightpink);
+    border-radius: 8px;
+    float:left; 
+    box-sizing: border-box;
+    margin-left: 1px;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.student:hover img {
+    filter: drop-shadow(2px 2px 8px rgb(235, 100, 100));
+}
+
+    .student p {
+        margin-top: 5px;
+    }
+  
+.student img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+    float:right;
+}
+
+.parent-float {
+    overflow: auto; 
+}
+
+.text {
+    border:2px solid pink;
+    padding: 15px;
+    background-color:white;
+    font-size: 20px;
+    border-radius:5px;
+    line-height: 140%;
+}
+
+
+.header-logo {
+    float: left;
+    margin: 6px 20px 10px 45px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.footer-info {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.img-start {
+    max-height: 500px;
+    border: 4px solid darkgrey;
+    box-shadow: 6px 6px 8px rgb(92, 91, 91);
+}
+
+.container-flag {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-flag {
+    margin-top: 5px;
+    max-height: 160px;
+    transition: all linear 1s;
+}
+
+.img-flag:hover {
+    transform: scale(1.1);
+    transition: all linear 1.5s;
+}
+
+.hamburger-menu {
+    display: none;
+    float: right;
+}
+
+.col-1 {width: 10%;}
+.col-2 {width: 20;}
+.col-3 {width: 30%;}
+.col-4 {width: 40%;}
+.col-5 {width: 50%;}
+.col-6 {width: 60%;}
+.col-7 {width: 70%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.col-10 {width: 100%;}
+
+[class*="col-"] {
+    float:left;
+	box-sizing: border-box;
+	padding: 7px;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.grammar {
+    margin-top: 5px;
+    max-height: 270px;
+    border: 4px solid darkgrey;
+    z-index: 1;
+}
+
+.practic {
+    margin-top: 5px;
+    max-height: 290px;
+}
+
+@media (max-width: 770px) {
+	
+	[class*="col-"] {
+		width: 100%;
+	}
+
+
+    .container {
+        padding: 5px 5% 20px 5%;   
+    }
+
+    .nav a{
+        display: none;
+    }
+    
+    a.hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav.mobile a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+}
